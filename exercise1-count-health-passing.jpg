@@ -1,1 +1,1 @@
-pytest tests/test_api.py -k "health or count"
+pytest tests/test_api.py
