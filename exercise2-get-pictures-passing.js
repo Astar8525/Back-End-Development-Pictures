@@ -1,7 +1,0 @@
-test_health
-test_count
-test_data_contains_10_pictures
-test_get_picture
-test_get_pictures_check_content_type_equals_json
-
-pytest tests/test_api.py
