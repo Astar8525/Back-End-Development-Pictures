@@ -1,1 +1,14 @@
-pytest tests/test_api.py
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/count')
+def count():
+    return jsonify({'count': 42})  # Example static count
+
+@app.route('/health')
+def health():
+    return jsonify({'status': 'healthy'})
+
+if __name__ == '__main__':
+    app.run(debug=True)
